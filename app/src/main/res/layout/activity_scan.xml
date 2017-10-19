@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_scanner_layout="@layout/layout_custom_barcode_scanner"></com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <include layout="@layout/toolbar_main" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/scanactivity_qrcode_postion"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_inptcode_scanactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_40dp"
+        android:layout_marginLeft="50dp"
+        android:drawablePadding="@dimen/activity_vertical_margin"
+        android:onClick="inputOnClick"
+        android:drawableTop="@drawable/scanactivity_inputcode"
+        android:text="@string/scanactivity_inputcode"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_flashlight_scanactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_40dp"
+        android:layout_marginRight="50dp"
+        android:drawablePadding="@dimen/activity_vertical_margin"
+        android:drawableTop="@drawable/scanactivity_flashlight"
+        android:text="@string/scanactivity_flashlight"
+        android:onClick="flashLightOnClick"
+        android:textColor="@color/white" />
+
+    <!--手动输码-->
+    <include
+        layout="@layout/layout_inputcode"
+        android:visibility="gone" />
+</RelativeLayout>

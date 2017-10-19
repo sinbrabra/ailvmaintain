@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    app:elevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--顶部 车辆位置-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_carposition_lbl_appointmentlayout"
+                    style="@style/Text.Secondary"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/height_10dp"
+                    android:text="车辆位置:"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_caraddress_appointment_layout"
+                    style="@style/Text.Secondary"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_carposition_lbl_appointmentlayout"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp"
+                    tools:text="温州市鹿城区" />
+            </LinearLayout>
+
+            <!--车辆编号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    style="@style/Text.Secondary"
+                    android:layout_marginLeft="@dimen/height_10dp"
+                    android:text="车辆编号："
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tv_code_appointment_layout"
+                    style="@style/Text.Secondary"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="3281812649825" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.guuguo.android.lib.widget.roundview.RoundLinearLayout
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/dp_10"
+            app:rv_cornerRadius="5dp"
+            app:rv_strokeColor="@color/text_color"
+            app:rv_strokeWidth="1px">
+
+            <TextView
+                android:id="@+id/car_status"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="车辆状态"
+                android:textColor="@color/black60"
+                android:textSize="12sp"
+                app:rv_cornerRadius="5dp"
+                android:onClick="onCarInformationClick"
+                app:rv_strokeColor="@color/text_color"
+                app:rv_strokeWidth="1px" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                app:srcCompat="@drawable/ic_right_grey_back" />
+        </com.guuguo.android.lib.widget.roundview.RoundLinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/Dividers_Grey"
+        android:layout_marginTop="6dp" />
+
+    <!--车辆信息-->
+
+    <LinearLayout
+        android:id="@+id/rl_status_appointment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="68dp"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <!--预计里程-->
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="预估里程"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_distance_forecast_appointment_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/gray60"
+                android:textSize="16sp"
+                tools:text="50" />
+
+            <TextView
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="km"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--剩余电量-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="剩余电量"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/img_battery_appointment_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                tools:src="@drawable/battery_3" />
+
+            <TextView
+                android:id="@+id/tv_battery_appointment_layout"
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                tools:text="75%" />
+        </LinearLayout>
+        <!--距离-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="距离位置"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_distance_appointment_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/gray60"
+                android:textSize="16sp"
+                tools:text="0" />
+
+            <TextView
+                style="@style/Text.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="m"
+                android:textColor="@color/gray60"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/Dividers_Grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--按钮-->
+        <com.guuguo.android.lib.widget.roundview.RoundTextView
+            android:id="@+id/btn_appoint_appointment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin_small"
+            android:layout_weight="1"
+            app:rv_backgroundColor="@color/red"
+            android:padding="@dimen/dp_10"
+            app:rv_cornerRadius="5dp"
+            android:text="设为正常"
+            android:onClick="onSetStatusClick"
+            android:textSize="12sp"
+            android:textColor="@color/white" />
+
+        <com.guuguo.android.lib.widget.roundview.RoundTextView
+            android:id="@+id/roundTextView"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin_small"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="打开坐桶"
+            android:textColor="@color/black60"
+            app:rv_cornerRadius="6dp"
+            app:rv_strokeColor="@color/gray60"
+            android:onClick="onOpenBoxClick"
+            app:rv_strokeWidth="1px" />
+    </LinearLayout>
+
+    <View style="@style/Dividers_Grey" />
+
+</LinearLayout>

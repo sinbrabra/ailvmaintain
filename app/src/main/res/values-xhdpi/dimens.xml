@@ -1,0 +1,84 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="activity_horizontal_margin_small">6dp</dimen>
+    <dimen name="activity_vertical_margin_small">6dp</dimen>
+    <dimen name="activity_horizontal_margin_big">20dp</dimen>
+    <dimen name="activity_vertical_margin_big">20dp</dimen>
+    <dimen name="index_tab_height">48dp</dimen>
+    <dimen name="index_tab_icon_margin_top">6dp</dimen>
+    <dimen name="index_tab_red_icon_margin_top">4dp</dimen>
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="bottom_bar_height">40dp</dimen>
+    <dimen name="span_height">6dp</dimen>
+    <dimen name="list_item_height">44dp</dimen>
+    <dimen name="list_item_height_img">48dp</dimen>
+    <dimen name="list_item_height_64dp">56dp</dimen>
+    <dimen name="list_item_height_80">64dp</dimen>
+    <dimen name="slide_home_height">180dp</dimen>
+    <dimen name="slide_dian_height">24dp</dimen>
+    <dimen name="btn_home_height">72dp</dimen>
+    <dimen name="img_home_height">36dp</dimen>
+    <dimen name="notice_home_height">32dp</dimen>
+    <dimen name="img_height">36dp</dimen>
+    <dimen name="img_width">36dp</dimen>
+    <dimen name="img_height_48dp">40dp</dimen>
+    <dimen name="img_width_48dp">40dp</dimen>
+    <dimen name="img_width_long">104dp</dimen>
+    <dimen name="btn_width_120dp">104dp</dimen>
+    <dimen name="btn_width_64dp">60dp</dimen>
+    <dimen name="rl_height_120dp">104dp</dimen>
+
+    <dimen name="width_144dp">120dp</dimen>
+    <dimen name="translationX_100dp">92dp</dimen>
+    <dimen name="translationX_100dp_fu">-92dp</dimen>
+    <!--home_user-->
+    <dimen name="user_top_height">120dp</dimen>
+    <dimen name="img_user_height">72dp</dimen>
+    <dimen name="img_user_width">72dp</dimen>
+
+    <dimen name="home_todaysales_infowidth">152dp</dimen>
+    <!--search bar-->
+    <dimen name="search_bar_height">40dp</dimen>
+
+    <!---->
+    <dimen name="margin_24dp">20dp</dimen>
+    <dimen name="margin_32dp">28dp</dimen>
+    <dimen name="margin_40dp">36dp</dimen>
+    <dimen name="margin_48dp">44dp</dimen>
+    <dimen name="margin_56dp">48dp</dimen>
+    <dimen name="margin_64dp">56dp</dimen>
+    <dimen name="margin_120dp">112dp</dimen>
+
+    <dimen name="height_10dp">8dp</dimen>
+    <dimen name="height_32dp">28dp</dimen>
+    <dimen name="height_40dp">36dp</dimen>
+    <dimen name="height_48dp">44dp</dimen>
+    <dimen name="height_72dp">68dp</dimen>
+    <dimen name="height_88dp">84dp</dimen>
+    <dimen name="height_96dp">92dp</dimen>
+    <dimen name="height_120dp">108dp</dimen>
+    <dimen name="height_150dp">136dp</dimen>
+    <dimen name="width_48dp">40dp</dimen>
+    <dimen name="width_120dp">108dp</dimen>
+    <dimen name="drawer_right_width">240dp</dimen>
+
+    <dimen name="size_24dp">20dp</dimen>
+    <dimen name="size_72dp">68dp</dimen>
+    <dimen name="size_96dp">92dp</dimen>
+
+
+
+    <!--字号-->
+    <dimen name="headline">24sp</dimen>
+    <dimen name="title_txtsize_big">20sp</dimen>
+    <dimen name="title_txtsize">18sp</dimen>
+    <dimen name="subhead_txtsize">16sp</dimen>
+    <dimen name="body1_txtsize">14sp</dimen>
+    <dimen name="body2_txtsize">12sp</dimen>
+    <dimen name="body3_txtsize">10sp</dimen>
+    <dimen name="home_tab_textsize">10sp</dimen>
+
+    <dimen name="height_item_order_layout">96dp</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">爱驴维护</string>
+    <string name="scanactivity_inputcode">输入编码开锁</string>
+    <string name="scanactivity_scancode">扫描二维码开锁</string>
+    <string name="scanactivity_flashlight">打开手电筒</string>
+</resources>
